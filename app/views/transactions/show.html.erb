@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @transaction.number %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @transaction.try(:user).try(:name) %>
+  </br></br>
+  <strong>Email:</strong>
+  <%= @transaction.try(:user).try(:email) %>
+  </br></br>
+  <strong>Phone Number:</strong>
+  <%= @transaction.try(:user).try(:phone_number) %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @transaction.try(:book).try(:title) %>
+</p>
+
+<p>
+  <strong>Return date:</strong>
+  <%= @transaction.return_date %>
+</p>
+
+<%= link_to 'Back', transactions_path %>
