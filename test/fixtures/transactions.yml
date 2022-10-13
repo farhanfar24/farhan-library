@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  user: one
+  book: one
+  duration: 1
+  return_date: 2022-10-13 00:25:47
+
+two:
+  number: MyString
+  user: two
+  book: two
+  duration: 1
+  return_date: 2022-10-13 00:25:47
